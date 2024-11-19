@@ -6,7 +6,7 @@
   "dependencies": {
     "@babel/plugin-transform-private-property-in-object": "^7.25.9",
     "@chakra-ui/icons": "^2.2.4",
-    "@chakra-ui/react": "^2.10.4",
+    "@chakra-ui/react": "^3.1.2",
     "@chakra-ui/system": "^2.6.2",
     "@emotion/react": "^11.13.3",
     "@vitejs/plugin-react": "^4.3.3",
