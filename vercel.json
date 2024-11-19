@@ -1,0 +1,47 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-DNS-Prefetch-Control",
+          "value": "on"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'  https://apis.google.com https://identitytoolkit.googleapis.com https://s-usc1b-nss-2130.firebaseio.com https://alltech-d141a-default-rtdb.firebaseio.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://models.inference.ai.azure.com wss://alltech-d141a-default-rtdb.firebaseio.com https://firestore.googleapis.com https://identitytoolkit.googleapis.com https://alltech.gachara.store wss://firestore.googleapis.com https://alltech-d141a-default-rtdb.firebaseio.com wss://s-usc1b-nss-2130.firebaseio.com; media-src 'self'; object-src 'none'; frame-src 'self' https://s-usc1b-nss-2130.firebaseio.com https://alltech-d141a.firebaseapp.com; form-action 'self'; base-uri 'self';"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
